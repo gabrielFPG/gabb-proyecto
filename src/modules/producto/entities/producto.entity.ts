@@ -24,7 +24,7 @@ export class Producto {
     descripcion: string;
 
     @Column()
-    estado: string;
+    estado: boolean;
 
     @ManyToOne(()=>Categoria, (cat)=>cat.porducto)
     categoria: Categoria;
